@@ -1,0 +1,72 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial;
+}
+
+/* NAVBAR */
+header {
+    background: #0d1b2a;
+    color: white;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+/* HERO */
+#home {
+    height: 90vh;
+    background: gray;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* SECTION */
+section {
+    padding: 40px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* BOX */
+.service-box,
+.portfolio-item,
+.price-box {
+    background: #eee;
+    margin: 10px;
+    padding: 20px;
+}
+
+/* STICKY NAV */
+header.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
